@@ -1,0 +1,25 @@
+# Kişisel bilgiler sözlüğü
+person_info = {
+    "name": "Alice",
+    "age": 30,
+    "city": "New York",
+    "hobbies": ["reading", "cycling"]
+}
+
+# Bilgilere erişim
+name = person_info["name"]
+age = person_info.get("age")
+city = person_info["city"]
+
+# Bilgileri yazdırma
+print(f"Ad: {name}")
+print(f"Yaş: {age}")
+print(f"Şehir: {city}")
+
+# Hobileri ekleme ve çıkarma
+person_info["hobbies"].append("swiming")
+person_info["hobbies"].remove("reading")
+
+print("Güncellenmiş Hobiler:")
+for hobby in person_info["hobbies"]:
+    print(hobby)
