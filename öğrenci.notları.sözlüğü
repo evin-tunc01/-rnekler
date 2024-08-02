@@ -1,0 +1,21 @@
+# Öğrenci notları sözlüğü
+student_grades = {
+    "John": [85, 90, 78],
+    "Emma": [92, 88, 91],
+    "Alex": [70, 80, 72]
+}
+
+# Öğrenci notlarının ortalamasını hesaplama
+for student, grades in student_grades.items():
+    average = sum(grades) / len(grades)
+    print(f"{student} için Ortalama Not: {average:.2f}")
+
+# Yeni bir öğrenci ekleme
+student_grades["Sophia"] = [88, 92, 85]
+
+# Öğrenci notlarını güncelleme
+student_grades["Alex"].append(75)
+
+print("Güncellenmiş Notlar:")
+for student, grades in student_grades.items():
+    print(f"{student}: {grades}")
